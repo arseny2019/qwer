@@ -5,5 +5,20 @@ $(document).ready(function(){
         nextArrow: $('.slider__arrow_next')
     });
 
+    $('.registration').click(function () {
+        $('body').addClass('scroll-hidden');
+        $('.darkness').fadeIn(300);
+        $('.modal').fadeIn(300);
+    })
+
+    $('.modal__button').click(function () {
+        $('.darkness').fadeOut(300);
+        $('.modal').fadeOut(300);
+    })
+
+    if($('.darkness').click(function () {
+        $('.modal__button').click();
+    }));
+
 
 });
