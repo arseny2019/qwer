@@ -7,6 +7,23 @@
 RR14 = 14px "Roboto Regular"
 greenGradient = linear-gradient(to bottom, rgba(89, 173, 62, 1) 0%, rgba(37, 122, 20, 1) 100%)
 
+
+:focus::-webkit-input-placeholder
+  color: transparent
+
+
+:focus::-moz-placeholder
+  color: transparent
+
+
+:focus:-moz-placeholder
+  color: transparent
+
+
+:focus:-ms-input-placeholder
+  color: transparent
+
+
 a
   text-decoration none
   cursor pointer
@@ -118,9 +135,10 @@ a
   margin 0 auto
   position relative
 
+.mobile-menu
+  display none
+
 .header
-  &__mobile-menu
-    display none
   &__logo
     width 230px
     height 65px
@@ -610,5 +628,9 @@ a
   width 100%
   background black
 
-.link:hover
-  font-family "Roboto Bold"
+
+
+.link
+  height 23px
+  &:hover
+    font-family "Roboto Bold"

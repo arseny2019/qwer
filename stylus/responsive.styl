@@ -74,7 +74,7 @@
     width 100%
 
 
-  .header__mobile-menu
+  .mobile-menu
     display block
     margin 0
     position fixed
@@ -89,12 +89,12 @@
     transition 300ms
     &_hidden
       top -100vh
-  .header__mobile-menu .authorization
+  .mobile-menu .authorization
     display flex
     flex-direction row
     justify-content space-between
     width 160px
-  .header__mobile-menu .menu
+  .mobile-menu .menu
     display block
     padding-top 75px
     &__item
@@ -179,11 +179,13 @@
       background-image url("../res/image/whitearrow.svg")
 
   .search
-    width 300px
+    width 100%
   .header__container
     display block
     padding 30px
     margin-top 0
+  .header__subcontainer
+    display block
   .header__mobile-container
     display flex
     justify-content space-between
@@ -247,15 +249,15 @@
       top 40%
       left 20%
 
-  .catalog__row
-    flex-direction column
-    display none
-    &_first
-      display flex
+  .catalog
+    padding 40px 60px 30px 30px
+    &__row
+      flex-direction column
+      display none
+      &_first
+        display flex
   .col-xs-12
     width 100%
-    display flex
-    justify-content center
 
   .info
     flex-direction column

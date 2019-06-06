@@ -79,7 +79,7 @@
   .page-container {
     width: 100%;
   }
-  .header__mobile-menu {
+  .mobile-menu {
     display: block;
     margin: 0;
     position: fixed;
@@ -93,20 +93,20 @@
     background-image: linear-gradient(to bottom, #6db552 0%, #33831f 100%);
     transition: 300ms;
   }
-  .header__mobile-menu_hidden {
+  .mobile-menu_hidden {
     top: -100vh;
   }
-  .header__mobile-menu .authorization {
+  .mobile-menu .authorization {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 160px;
   }
-  .header__mobile-menu .menu {
+  .mobile-menu .menu {
     display: block;
     padding-top: 75px;
   }
-  .header__mobile-menu .menu__item {
+  .mobile-menu .menu__item {
     display: block;
     width: 100%;
     background-image: none;
@@ -115,16 +115,16 @@
     padding: 16px 40px;
     font-size: 12px;
   }
-  .header__mobile-menu .menu__item:hover {
+  .mobile-menu .menu__item:hover {
     color: #fff;
     background-image: none;
   }
-  .header__mobile-menu .menu__item:hover::after {
+  .mobile-menu .menu__item:hover::after {
     background-color: #3e8e27;
     opacity: 1;
     box-shadow: 0 1px 0 rgba(255,255,255,0.37);
   }
-  .header__mobile-menu .menu__item::after {
+  .mobile-menu .menu__item::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -136,7 +136,7 @@
     background-color: #3e8e27;
     background-image: none;
   }
-  .header__mobile-menu .menu__item_first::before {
+  .mobile-menu .menu__item_first::before {
     content: '';
     position: absolute;
     top: 0;
@@ -193,12 +193,15 @@
     background-image: url("../res/image/whitearrow.svg");
   }
   .search {
-    width: 300px;
+    width: 100%;
   }
   .header__container {
     display: block;
     padding: 30px;
     margin-top: 0;
+  }
+  .header__subcontainer {
+    display: block;
   }
   .header__mobile-container {
     display: flex;
@@ -274,6 +277,9 @@
     top: 40%;
     left: 20%;
   }
+  .catalog {
+    padding: 40px 60px 30px 30px;
+  }
   .catalog__row {
     flex-direction: column;
     display: none;
@@ -283,8 +289,6 @@
   }
   .col-xs-12 {
     width: 100%;
-    display: flex;
-    justify-content: center;
   }
   .info {
     flex-direction: column;
