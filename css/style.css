@@ -33,7 +33,7 @@ a {
 }
 .modal {
   display: none;
-  position: absolute;
+  position: fixed;
   top: calc(50vh - 130px);
   left: calc(50vw - 155px);
   height: 260px;
