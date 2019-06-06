@@ -126,9 +126,13 @@ a {
   margin: 0 auto;
   position: relative;
 }
+.header__mobile-menu {
+  display: none;
+}
 .header__logo {
   width: 230px;
   height: 65px;
+  flex: 1;
 }
 .header__mobile-container {
   flex: 1;
@@ -661,4 +665,7 @@ a {
   height: 1px;
   width: 100%;
   background: #000;
+}
+.link:hover {
+  font-family: "Roboto Bold";
 }

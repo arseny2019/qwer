@@ -33,5 +33,17 @@ $(document).ready(function(){
         })
     })
 
+    $('.burger').click(function () {
+        $('.burger').toggleClass('burger_active');
+        if ($('.burger').hasClass('burger_active')) {
+            $('.header__mobile-menu').removeClass('header__mobile-menu_hidden');
+            console.log('open')
+
+        } else {
+            $('.header__mobile-menu').addClass('header__mobile-menu_hidden');
+            console.log('close')
+        }
+    });
+
 
 });
