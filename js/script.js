@@ -20,5 +20,18 @@ $(document).ready(function(){
         $('.modal__button').click();
     }));
 
+    $('.link').on('mousedown', function () {
+        var obj = $(this).children($('line'));
+        obj.animate({
+            width: "0"
+            }, 500
+        )
+    });
+    $(document).on('mouseup', function () {
+        $('.line').css({
+            "width": "100%"
+        })
+    })
+
 
 });

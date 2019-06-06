@@ -1,10 +1,13 @@
 doctype html
 html(lang="ru-RU")
     head
+        title UDOL
         meta(charset="UTF-8")
-        link(rel="stylesheet" href="css/style.css")
-        link(rel="stylesheet" href="css/fonts.css")
+        meta(name="viewport" content="width=device-width")
         link(rel="stylesheet" type="text/css" href="slick/slick.css")
+        link(rel="stylesheet" href="css/style.css")
+        link(rel="stylesheet" href="css/responsive.css")
+        link(rel="stylesheet" href="css/fonts.css")
     body
         .darkness
         .modal
@@ -13,13 +16,33 @@ html(lang="ru-RU")
                 form.modal__registration
                     input(type="text" placeholder="Имя").modal__input.modal__input_name
                     input(type="text" placeholder="Телефон").modal__input.modal__input_phone
-                .modal__button Регистрация
-        .page-block
+                .modal__button.button Регистрация
+        section.page-block
             .page-container
                 header.header
+
+
                     .header__container
-                        .header__logo
-                            .logo
+                        .header__mobile-container
+                            .header__logo
+                                .logo
+                            .burger
+                                .burger__line
+                            .header__mobile-menu
+                                .header__form
+                                    form.login-and-search
+                                        .authorization
+                                            a.registration(href="#") Регистрация
+                                            .login.button
+                                                .login__arrow
+                                                .login__text Вход
+                                nav.menu
+                                    a(href="#").menu__item.menu__item_first О компании
+                                    a(href="#").menu__item Инженерное сопровождение
+                                    a(href="#").menu__item Сертификаты
+                                    a(href="#").menu__item Новости
+                                    a(href="#").menu__item Техническая информация
+                                    a(href="#").menu__item.menu__item_last Контакты
                         .header__subcontainer
                             .header__contacts
                                 .contacts
@@ -31,22 +54,22 @@ html(lang="ru-RU")
                                         .contacts__adress
                                             a.contacts__email-link(href="#") bit@udol.ru
                             .header__form
-                            form.login-and-search
-                                .authorization
-                                    a.registration(href="#") Регистрация
-                                    .login
-                                        .login__arrow
-                                        .login__text Вход
-                                input.search(type="text" placeholder="Поиск")
+                                form.login-and-search
+                                    .authorization
+                                        a.registration(href="#") Регистрация
+                                        .login.button
+                                            .login__arrow
+                                            .login__text Вход
+                                    input.search(type="text" placeholder="Поиск")
                     .header__menu
-                        .menu
-                            .menu__item.menu__item_first О компании
-                            .menu__item Инженерное сопровождение
-                            .menu__item Сертификаты
-                            .menu__item Новости
-                            .menu__item Техническая информация
-                            .menu__item.menu__item_last Контакты
-        .page-block.slider-block
+                        nav.menu
+                            a(href="#").menu__item.menu__item_first О компании
+                            a(href="#").menu__item Инженерное сопровождение
+                            a(href="#").menu__item Сертификаты
+                            a(href="#").menu__item Новости
+                            a(href="#").menu__item Техническая информация
+                            a(href="#").menu__item.menu__item_last Контакты
+        section.page-block.slider-block
             .page-container
                 .slider__arrow.slider__arrow_prev
                 .slider__arrow.slider__arrow_next
@@ -73,92 +96,105 @@ html(lang="ru-RU")
                                     .slider__pic_shadow
 
 
-        .page-block.catalog-block
+        section.page-block.catalog-block
             .page-container
                 .catalog
+                    .catalog__row.catalog__row_first
+                        .col-md-3.col-xs-12
+                            .catalog__item
+                                .catalog__item-pic
+                                    .catalog__item-shadow
+                                    .catalog__item-background
+                                .catalog__item-title
+                                    a Долота PDC
+                        .col-md-3.col-xs-12
+                            .catalog__item
+                                .catalog__item-pic
+                                    .catalog__item-shadow
+                                    .catalog__item-background
+                                .catalog__item-title
+                                    a Бурголовки PDC
+                        .col-md-3.col-xs-12
+                            .catalog__item
+                                .catalog__item-pic
+                                    .catalog__item-shadow
+                                    .catalog__item-background
+                                .catalog__item-title
+                                    a Бицентричные долота PDC
+                        .col-md-3.col-xs-12
+                            .catalog__item.redundant-item
+                                .catalog__item-pic
+                                    .catalog__item-shadow
+                                    .catalog__item-background
+                                .catalog__item-title
+                                    a Твердосплавные долота
                     .catalog__row
-                        .catalog__item.col-md-3.col-xs-12
-                            .catalog__item-pic
-                                .catalog__item-shadow
-                                .catalog__item-background
-                            .catalog__item-title
-                                a Долота PDC
-                        .catalog__item.col-md-3.col-xs-12
-                            .catalog__item-pic
-                                .catalog__item-shadow
-                                .catalog__item-background
-                            .catalog__item-title
-                                a Бурголовки PDC
-                        .catalog__item.col-md-3.col-xs-12
-                            .catalog__item-pic
-                                .catalog__item-shadow
-                                .catalog__item-background
-                            .catalog__item-title
-                                a Бицентричные долота PDC
-                        .catalog__item.col-md-3.col-xs-12
-                            .catalog__item-pic
-                                .catalog__item-shadow
-                                .catalog__item-background
-                            .catalog__item-title
-                                a Твердосплавные долота
+                        .col-md-3.col-xs-12
+                            .catalog__item
+                                .catalog__item-pic
+                                    .catalog__item-shadow
+                                    .catalog__item-background
+                                .catalog__item-title
+                                    a Подвески «хвостовиков»
+                        .col-md-3.col-xs-12
+                            .catalog__item
+                                .catalog__item-pic
+                                    .catalog__item-shadow
+                                    .catalog__item-background
+                                .catalog__item-title
+                                    a Оборудование для отбора керна
+                        .col-md-3.col-xs-12
+                            .catalog__item
+                                .catalog__item-pic
+                                    .catalog__item-shadow
+                                    .catalog__item-background
+                                .catalog__item-title
+                                    a Калибраторы и центраторы
+                        .col-md-3.col-xs-12
+                            .catalog__item
+                                .catalog__item-pic
+                                    .catalog__item-shadow
+                                    .catalog__item-background
+                                .catalog__item-title
+                                    a Клапаны для ВЗД
                     .catalog__row
-                        .catalog__item.col-md-3.col-xs-12
-                            .catalog__item-pic
-                                .catalog__item-shadow
-                                .catalog__item-background
-                            .catalog__item-title
-                                a Подвески «хвостовиков»
-                        .catalog__item.col-md-3.col-xs-12
-                            .catalog__item-pic
-                                .catalog__item-shadow
-                                .catalog__item-background
-                            .catalog__item-title
-                                a Оборудование для отбора керна
-                        .catalog__item.col-md-3.col-xs-12
-                            .catalog__item-pic
-                                .catalog__item-shadow
-                                .catalog__item-background
-                            .catalog__item-title
-                                a Калибраторы и центраторы
-                        .catalog__item.col-md-3.col-xs-12
-                            .catalog__item-pic
-                                .catalog__item-shadow
-                                .catalog__item-background
-                            .catalog__item-title
-                                a Клапаны для ВЗД
-                    .catalog__row
-                        .catalog__item.col-md-3.col-xs-12
-                            .catalog__item-pic
-                                .catalog__item-shadow
-                                .catalog__item-background
-                            .catalog__item-title
-                                a Оборудование для цементирования скважин
-                        .catalog__item.col-md-3.col-xs-12
-                            .catalog__item-pic
-                                .catalog__item-shadow
-                                .catalog__item-background
-                            .catalog__item-title
-                                a Технологическая оснастка обсадных колонн
-                        .catalog__item.col-md-3.col-xs-12
-                            .catalog__item-pic
-                                .catalog__item-shadow
-                                .catalog__item-background
-                            .catalog__item-title
-                                a Вспомогательное оборудование
-        .page-block.info-block
+                        .col-md-3.col-xs-12
+                            .catalog__item
+                                .catalog__item-pic
+                                    .catalog__item-shadow
+                                    .catalog__item-background
+                                .catalog__item-title
+                                    a Оборудование для цементирования скважин
+                        .col-md-3.col-xs-12
+                            .catalog__item
+                                .catalog__item-pic
+                                    .catalog__item-shadow
+                                    .catalog__item-background
+                                .catalog__item-title
+                                    a Технологическая оснастка обсадных колонн
+                        .col-md-3.col-xs-12
+                            .catalog__item
+                                .catalog__item-pic
+                                    .catalog__item-shadow
+                                    .catalog__item-background
+                                .catalog__item-title
+                                    a Вспомогательное оборудование
+                    .button.catalog__all-item Показать весь каталог
+
+        section.page-block.info-block
             .page-container
                 .info
                     .info__left
                         .info__title О компании
                         .info__top
-                            .info__text.
+                            p.info__text.
                                 Совместное предприятие "Удмуртские долота" (СП ЗАО "УДОЛ")
                                 организованое в 1996 году компаниями "Diamond Products International, Inc." (США),
                                 ОАО "Удмуртнефть" и ГПО "Воткинский завод" (Россия), производит высококачественное
                                 буровое оборудование, применяя передовые технологии, накопленный опыт
                                 и знания с целью повышения эффективности работы буровых и сервисных компаний.
                         .info__bottom
-                            .info__ul-title.info__text.
+                            p.info__ul-title.info__text.
                                 На сегодняшний день нашим предприятием разработаны и выпускаются:
                             ul.info__ul.info__text
                                 li.info__li.
@@ -204,7 +240,7 @@ html(lang="ru-RU")
                                         На сегодняшний день нашим предприятием разработаны и выпускаются
 
                         .attestation
-                            .attestation__container
+                            .attestation__container.button
                                 .attestation__pic-container
                                     .attestation__pic
                                 .attestation__text Сертификаты
@@ -212,12 +248,14 @@ html(lang="ru-RU")
         footer.footer
             .page-container
                 .footer__container
-                    .actions
-                        .actions__site-map Карта сайта
-                        .actions__feedback Написать Нам
-                    .site-owner © 2012 СП ЗАО «УДОЛ»
+                    .actions.footer__item
+                        a.actions__site-map.link Карта сайта
+                            .line
+                        a.actions__feedback.link Написать Нам
+                            .line
+                    .site-owner.footer__item © 2012 СП ЗАО «УДОЛ»
                         .producer-tag Создание сайта — компания «Picom»
-                    .statistic
+                    .statistic.footer__item
                         .statistic__day
                         .statistic__alltime
 

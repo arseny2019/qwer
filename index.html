@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
   <head>
+    <title>UDOL</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fonts.css">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/fonts.css">
   </head>
   <body>
     <div class="darkness"></div>
@@ -15,15 +18,33 @@
           <input class="modal__input modal__input_name" type="text" placeholder="Имя">
           <input class="modal__input modal__input_phone" type="text" placeholder="Телефон">
         </form>
-        <div class="modal__button">Регистрация</div>
+        <div class="modal__button button">Регистрация</div>
       </div>
     </div>
-    <div class="page-block">
+    <section class="page-block">
       <div class="page-container">
         <header class="header">
           <div class="header__container">
-            <div class="header__logo">
-              <div class="logo"></div>
+            <div class="header__mobile-container">
+              <div class="header__logo">
+                <div class="logo"></div>
+              </div>
+              <div class="burger">
+                <div class="burger__line"></div>
+              </div>
+              <div class="header__mobile-menu">
+                <div class="header__form">
+                  <form class="login-and-search">
+                    <div class="authorization"><a class="registration" href="#">Регистрация</a>
+                      <div class="login button">
+                        <div class="login__arrow"></div>
+                        <div class="login__text">Вход</div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <nav class="menu"><a class="menu__item menu__item_first" href="#">О компании</a><a class="menu__item" href="#">Инженерное сопровождение</a><a class="menu__item" href="#">Сертификаты</a><a class="menu__item" href="#">Новости</a><a class="menu__item" href="#">Техническая информация</a><a class="menu__item menu__item_last" href="#">Контакты</a></nav>
+              </div>
             </div>
             <div class="header__subcontainer">
               <div class="header__contacts">
@@ -38,32 +59,26 @@
                   </div>
                 </div>
               </div>
-              <div class="header__form"></div>
-              <form class="login-and-search">
-                <div class="authorization"><a class="registration" href="#">Регистрация</a>
-                  <div class="login">
-                    <div class="login__arrow"></div>
-                    <div class="login__text">Вход</div>
+              <div class="header__form">
+                <form class="login-and-search">
+                  <div class="authorization"><a class="registration" href="#">Регистрация</a>
+                    <div class="login button">
+                      <div class="login__arrow"></div>
+                      <div class="login__text">Вход</div>
+                    </div>
                   </div>
-                </div>
-                <input class="search" type="text" placeholder="Поиск">
-              </form>
+                  <input class="search" type="text" placeholder="Поиск">
+                </form>
+              </div>
             </div>
           </div>
           <div class="header__menu">
-            <div class="menu">
-              <div class="menu__item menu__item_first">О компании</div>
-              <div class="menu__item">Инженерное сопровождение</div>
-              <div class="menu__item">Сертификаты</div>
-              <div class="menu__item">Новости</div>
-              <div class="menu__item">Техническая информация</div>
-              <div class="menu__item menu__item_last">Контакты</div>
-            </div>
+            <nav class="menu"><a class="menu__item menu__item_first" href="#">О компании</a><a class="menu__item" href="#">Инженерное сопровождение</a><a class="menu__item" href="#">Сертификаты</a><a class="menu__item" href="#">Новости</a><a class="menu__item" href="#">Техническая информация</a><a class="menu__item menu__item_last" href="#">Контакты</a></nav>
           </div>
         </header>
       </div>
-    </div>
-    <div class="page-block slider-block">
+    </section>
+    <section class="page-block slider-block">
       <div class="page-container">
         <div class="slider__arrow slider__arrow_prev"></div>
         <div class="slider__arrow slider__arrow_next"></div>
@@ -100,112 +115,135 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="page-block catalog-block">
+    </section>
+    <section class="page-block catalog-block">
       <div class="page-container">
         <div class="catalog">
-          <div class="catalog__row">
-            <div class="catalog__item col-md-3 col-xs-12">
-              <div class="catalog__item-pic">
-                <div class="catalog__item-shadow"></div>
-                <div class="catalog__item-background"></div>
+          <div class="catalog__row catalog__row_first">
+            <div class="col-md-3 col-xs-12">
+              <div class="catalog__item">
+                <div class="catalog__item-pic">
+                  <div class="catalog__item-shadow"></div>
+                  <div class="catalog__item-background"></div>
+                </div>
+                <div class="catalog__item-title"><a>Долота PDC</a></div>
               </div>
-              <div class="catalog__item-title"><a>Долота PDC</a></div>
             </div>
-            <div class="catalog__item col-md-3 col-xs-12">
-              <div class="catalog__item-pic">
-                <div class="catalog__item-shadow"></div>
-                <div class="catalog__item-background"></div>
+            <div class="col-md-3 col-xs-12">
+              <div class="catalog__item">
+                <div class="catalog__item-pic">
+                  <div class="catalog__item-shadow"></div>
+                  <div class="catalog__item-background"></div>
+                </div>
+                <div class="catalog__item-title"><a>Бурголовки PDC</a></div>
               </div>
-              <div class="catalog__item-title"><a>Бурголовки PDC</a></div>
             </div>
-            <div class="catalog__item col-md-3 col-xs-12">
-              <div class="catalog__item-pic">
-                <div class="catalog__item-shadow"></div>
-                <div class="catalog__item-background"></div>
+            <div class="col-md-3 col-xs-12">
+              <div class="catalog__item">
+                <div class="catalog__item-pic">
+                  <div class="catalog__item-shadow"></div>
+                  <div class="catalog__item-background"></div>
+                </div>
+                <div class="catalog__item-title"><a>Бицентричные долота PDC</a></div>
               </div>
-              <div class="catalog__item-title"><a>Бицентричные долота PDC</a></div>
             </div>
-            <div class="catalog__item col-md-3 col-xs-12">
-              <div class="catalog__item-pic">
-                <div class="catalog__item-shadow"></div>
-                <div class="catalog__item-background"></div>
+            <div class="col-md-3 col-xs-12">
+              <div class="catalog__item redundant-item">
+                <div class="catalog__item-pic">
+                  <div class="catalog__item-shadow"></div>
+                  <div class="catalog__item-background"></div>
+                </div>
+                <div class="catalog__item-title"><a>Твердосплавные долота</a></div>
               </div>
-              <div class="catalog__item-title"><a>Твердосплавные долота</a></div>
-            </div>
-          </div>
-          <div class="catalog__row">
-            <div class="catalog__item col-md-3 col-xs-12">
-              <div class="catalog__item-pic">
-                <div class="catalog__item-shadow"></div>
-                <div class="catalog__item-background"></div>
-              </div>
-              <div class="catalog__item-title"><a>Подвески «хвостовиков»</a></div>
-            </div>
-            <div class="catalog__item col-md-3 col-xs-12">
-              <div class="catalog__item-pic">
-                <div class="catalog__item-shadow"></div>
-                <div class="catalog__item-background"></div>
-              </div>
-              <div class="catalog__item-title"><a>Оборудование для отбора керна</a></div>
-            </div>
-            <div class="catalog__item col-md-3 col-xs-12">
-              <div class="catalog__item-pic">
-                <div class="catalog__item-shadow"></div>
-                <div class="catalog__item-background"></div>
-              </div>
-              <div class="catalog__item-title"><a>Калибраторы и центраторы</a></div>
-            </div>
-            <div class="catalog__item col-md-3 col-xs-12">
-              <div class="catalog__item-pic">
-                <div class="catalog__item-shadow"></div>
-                <div class="catalog__item-background"></div>
-              </div>
-              <div class="catalog__item-title"><a>Клапаны для ВЗД</a></div>
             </div>
           </div>
           <div class="catalog__row">
-            <div class="catalog__item col-md-3 col-xs-12">
-              <div class="catalog__item-pic">
-                <div class="catalog__item-shadow"></div>
-                <div class="catalog__item-background"></div>
+            <div class="col-md-3 col-xs-12">
+              <div class="catalog__item">
+                <div class="catalog__item-pic">
+                  <div class="catalog__item-shadow"></div>
+                  <div class="catalog__item-background"></div>
+                </div>
+                <div class="catalog__item-title"><a>Подвески «хвостовиков»</a></div>
               </div>
-              <div class="catalog__item-title"><a>Оборудование для цементирования скважин</a></div>
             </div>
-            <div class="catalog__item col-md-3 col-xs-12">
-              <div class="catalog__item-pic">
-                <div class="catalog__item-shadow"></div>
-                <div class="catalog__item-background"></div>
+            <div class="col-md-3 col-xs-12">
+              <div class="catalog__item">
+                <div class="catalog__item-pic">
+                  <div class="catalog__item-shadow"></div>
+                  <div class="catalog__item-background"></div>
+                </div>
+                <div class="catalog__item-title"><a>Оборудование для отбора керна</a></div>
               </div>
-              <div class="catalog__item-title"><a>Технологическая оснастка обсадных колонн</a></div>
             </div>
-            <div class="catalog__item col-md-3 col-xs-12">
-              <div class="catalog__item-pic">
-                <div class="catalog__item-shadow"></div>
-                <div class="catalog__item-background"></div>
+            <div class="col-md-3 col-xs-12">
+              <div class="catalog__item">
+                <div class="catalog__item-pic">
+                  <div class="catalog__item-shadow"></div>
+                  <div class="catalog__item-background"></div>
+                </div>
+                <div class="catalog__item-title"><a>Калибраторы и центраторы</a></div>
               </div>
-              <div class="catalog__item-title"><a>Вспомогательное оборудование</a></div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <div class="catalog__item">
+                <div class="catalog__item-pic">
+                  <div class="catalog__item-shadow"></div>
+                  <div class="catalog__item-background"></div>
+                </div>
+                <div class="catalog__item-title"><a>Клапаны для ВЗД</a></div>
+              </div>
             </div>
           </div>
+          <div class="catalog__row">
+            <div class="col-md-3 col-xs-12">
+              <div class="catalog__item">
+                <div class="catalog__item-pic">
+                  <div class="catalog__item-shadow"></div>
+                  <div class="catalog__item-background"></div>
+                </div>
+                <div class="catalog__item-title"><a>Оборудование для цементирования скважин</a></div>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <div class="catalog__item">
+                <div class="catalog__item-pic">
+                  <div class="catalog__item-shadow"></div>
+                  <div class="catalog__item-background"></div>
+                </div>
+                <div class="catalog__item-title"><a>Технологическая оснастка обсадных колонн</a></div>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <div class="catalog__item">
+                <div class="catalog__item-pic">
+                  <div class="catalog__item-shadow"></div>
+                  <div class="catalog__item-background"></div>
+                </div>
+                <div class="catalog__item-title"><a>Вспомогательное оборудование</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="button catalog__all-item">Показать весь каталог</div>
         </div>
       </div>
-    </div>
-    <div class="page-block info-block">
+    </section>
+    <section class="page-block info-block">
       <div class="page-container">
         <div class="info">
           <div class="info__left">
             <div class="info__title">О компании</div>
             <div class="info__top">
-              <div class="info__text">
+              <p class="info__text">
                 Совместное предприятие "Удмуртские долота" (СП ЗАО "УДОЛ")
                 организованое в 1996 году компаниями "Diamond Products International, Inc." (США),
                 ОАО "Удмуртнефть" и ГПО "Воткинский завод" (Россия), производит высококачественное
                 буровое оборудование, применяя передовые технологии, накопленный опыт
                 и знания с целью повышения эффективности работы буровых и сервисных компаний.
-              </div>
+              </p>
             </div>
             <div class="info__bottom">
-              <div class="info__ul-title info__text">На сегодняшний день нашим предприятием разработаны и выпускаются:</div>
+              <p class="info__ul-title info__text">На сегодняшний день нашим предприятием разработаны и выпускаются:</p>
               <ul class="info__ul info__text">
                 <li class="info__li">
                   долота PDC для бурения вертикальных,
@@ -257,7 +295,7 @@
               </div>
             </div>
             <div class="attestation">
-              <div class="attestation__container">
+              <div class="attestation__container button">
                 <div class="attestation__pic-container">
                   <div class="attestation__pic"></div>
                 </div>
@@ -267,18 +305,17 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <footer class="footer">
       <div class="page-container">
         <div class="footer__container">
-          <div class="actions">
-            <div class="actions__site-map">Карта сайта</div>
-            <div class="actions__feedback">Написать Нам</div>
-          </div>
-          <div class="site-owner">© 2012 СП ЗАО «УДОЛ»
+          <div class="actions footer__item"><a class="actions__site-map link">Карта сайта
+              <div class="line"></div></a><a class="actions__feedback link">Написать Нам
+              <div class="line"></div></a></div>
+          <div class="site-owner footer__item">© 2012 СП ЗАО «УДОЛ»
             <div class="producer-tag">Создание сайта — компания «Picom»</div>
           </div>
-          <div class="statistic">
+          <div class="statistic footer__item">
             <div class="statistic__day"></div>
             <div class="statistic__alltime"></div>
           </div>
