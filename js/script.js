@@ -5,13 +5,16 @@ $(document).ready(function () {
         nextArrow: $('.slider__arrow_next')
     });
 
-    $('.registration').click(function () {
+
+
+    $('.registration, .mobile__registration').click(function () {
         $('body').addClass('scroll-hidden');
         $('.darkness').fadeIn(300);
         $('.modal').fadeIn(300);
     });
 
     $('.modal__button').click(function () {
+        $('body').removeClass('scroll-hidden');
         $('.darkness').fadeOut(300);
         $('.modal').fadeOut(300);
     });
@@ -35,12 +38,13 @@ $(document).ready(function () {
 
     $('.burger').click(function () {
         $(this).toggleClass('burger_active');
+
         if ($(this).hasClass('burger_active')) {
             $('.mobile-menu').removeClass('mobile-menu_hidden');
+
         } else {
             $('.mobile-menu').addClass('mobile-menu_hidden');
         }
     });
-
 
 });
