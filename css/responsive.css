@@ -1,4 +1,7 @@
 @media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
   .redundant-item {
     display: none;
   }
@@ -69,15 +72,20 @@
   .page-container {
     width: 100%;
   }
+  .login-and-search {
+    padding-left: 40px;
+  }
   .header__mobile-menu {
-    position: absolute;
+    margin: 0;
+    position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     z-index: 99;
     height: 100vh;
-    width: 100%;
-    padding: 25px 30px 60px;
-    background-image: linear-gradient(to bottom, #59ad3e 0%, #257a14 100%);
+    width: 100vw;
+    padding-top: 30px;
+    background-image: linear-gradient(to bottom, #6db552 0%, #33831f 100%);
   }
   .header__mobile-menu .authorization {
     display: flex;
@@ -87,6 +95,11 @@
   }
   .header__mobile-menu .menu {
     display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 130px;
   }
   .header__mobile-menu .menu__item {
     display: block;
@@ -94,8 +107,22 @@
     background-image: none;
     height: 40px;
     position: relative;
+    padding: 16px 40px;
+    font-size: 12px;
   }
-  .header__mobile-menu .menu__item::before {
+  .header__mobile-menu .menu__item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.37);
+    background-color: #3e8e27;
+    background-image: none;
+  }
+  .header__mobile-menu .menu__item_first::before {
     content: '';
     position: absolute;
     top: 0;
@@ -103,20 +130,7 @@
     width: 100%;
     height: 2px;
     box-shadow: 0 1px 0 rgba(255,255,255,0.37);
-    background-color: #4ea033;
-  }
-  .header__mobile-menu .menu__item::after {
-    content: none;
-  }
-  .header__mobile-menu .menu__item_last::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    box-shadow: 0 1px 0 rgba(255,255,255,0.37);
-    background-color: #4ea033;
+    background-color: #3e8e27;
   }
   .registration {
     color: #fff;
@@ -143,6 +157,14 @@
   }
   .header__contacts {
     display: none;
+  }
+  .contacts__phone .contacts__tip {
+    font-size: 10px;
+    color: #fff;
+  }
+  .contacts__number {
+    font-size: 14px;
+    color: #fff;
   }
   .slider__slide {
     height: 400px;
