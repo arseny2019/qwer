@@ -1,0 +1,124 @@
+@require "desktop/avars.styl"
+.info
+  display flex
+  justify-content space-between
+  padding 60px 0 0 0
+  &__title
+    height 40px
+    display flex
+    align-items flex-end
+    padding-bottom 2px
+    margin-bottom 30px
+    font-family "Roboto Bold"
+    font-size 24px
+    line-height 30px
+    color #459a2b
+    text-transform uppercase
+    border-bottom 5px solid #e5ded3
+  &__ul
+    list-style-type none
+  &__li
+    position relative
+    padding-left 50px
+    margin-bottom 5px
+    font RR14
+    line-height 20px
+    &::before
+      content ''
+      width 12px
+      height 2px
+      background-color #50ae30;
+      position absolute
+      left 30px
+      top 8px
+  &__right
+    width 320px
+  &__left
+    width 620px
+  &__text
+    font RR14
+    line-height 20px
+    margin-bottom 30px
+
+.news
+  &__title
+    display flex
+    align-items flex-end
+    height 40px
+    padding-bottom 2px
+    margin-bottom 10px
+    font-family "Roboto Bold"
+    font-size 18px
+    color #459a2b
+    text-transform uppercase
+    border-bottom 5px solid #e5ded3
+  &__item
+    position relative
+    padding 20px
+    &::after
+      opacity 0.5
+      position absolute
+      content ' '
+      width 85%
+      top 0
+      left 0
+      border-top 2px solid #e1dacc
+    &_first::after
+      border none
+  &__date
+    margin-bottom 10px
+    font-family "Roboto Bold"
+    font-size 10px
+    text-transform uppercase
+    color #373737
+  &__content
+    font RR14
+    line-height 20px
+    color #459a2b
+    text-decoration underline
+
+.attestation
+  padding 60px 0
+  &__container
+    padding 33px
+    display flex
+    align-items center
+    height 70px
+    border-radius 10px
+    background-image greenGradient
+  &__text
+    font-family "Roboto Regular"
+    font-size 18px
+    color #ffffff
+    text-transform uppercase
+  &__pic
+    width 82px
+    height 114px
+    background-image url("../../res/image/doc.png")
+    background-repeat no-repeat
+    background-size cover
+    position relative
+    transform rotate(2deg);
+    &::after
+      position absolute
+      content ''
+      width 82px
+      height 114px
+      background-image url("../../res/image/doc.png")
+      background-repeat no-repeat
+      background-size cover
+      transform: rotate(-2deg)translate(-15px, -3px);
+    &::before
+      position absolute
+      content ''
+      width 82px
+      height 114px
+      background-image url("../../res/image/doc.png")
+      background-repeat no-repeat
+      background-size cover
+      transform rotate(-6deg)translate(-25px, -2px);
+    &-container
+      width 170px
+      display flex
+      justify-content center
+      align-items center

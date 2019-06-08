@@ -1,0 +1,57 @@
+@require "avars.styl"
+.actions
+  display flex
+  &__site-map
+    margin-right 40px
+  &__site-map, .actions__feedback
+    position relative
+    color #373737
+    font-family "Roboto Regular"
+    font-size 18px
+    transition 300ms
+
+.footer
+  background-color #f5f1ea
+  height 124px
+  display flex
+  align-items center
+  &__container
+    display flex
+    justify-content space-between
+
+.site-owner, .producer-tag
+  color #373737
+  font-family "Roboto Bold"
+  font-size 12px
+
+.producer-tag
+  margin-top 5px
+
+.statistic
+  width 180px
+  height 31px
+  display flex
+  justify-content space-between
+  align-items center
+  background-image url("../../res/image/statistic.svg")
+  background-size 100%
+  padding-left 30px
+  margin-right 40px
+  &__day, .statistic__alltime
+    font-family "Roboto Regular"
+    font-size 12px
+    width 50px
+    color #373737
+
+.line
+  position absolute
+  left 0
+  bottom 0
+  height 1px
+  width 100%
+  background black
+
+.link
+  height 23px
+  &:hover
+    font-family "Roboto Bold"

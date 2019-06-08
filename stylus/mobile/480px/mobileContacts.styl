@@ -1,0 +1,31 @@
+@media (max-width: 480px)
+  .mobile-contacts
+    position absolute
+    bottom 60px
+    left 40px
+    width calc(100% - 80px)
+    display flex
+    flex-direction row
+    justify-content space-between
+    align-items center
+    font-family "Roboto Regular"
+    &__phone .mobile-contacts__tip
+      font-size 10px
+      margin-bottom 5px
+      font-family "Roboto Regular"
+      color white
+    &__number
+      margin-bottom 0
+      font-size 14px
+      color white
+    &__email
+      display flex
+      color white
+      &-link
+        font-size 14px
+        color white
+        text-decoration underline
+    &__email .mobile-contacts__tip
+      font-size 14px
+    &__adress
+      padding-left 2px

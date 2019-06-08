@@ -13,10 +13,8 @@ var pug = require('gulp-pug');
 
 
 //Порядок подключения css файлов
-const cssFiles = [
-    './stylus/style.styl',
-    './stylus/responsive.styl'
-];
+const styleDesktop = './stylus/desktop/*.styl';
+const styleMobile = './stylus/mobile/*.styl';
 const pugFiles = [
     './pug/index.pug'
 ];
@@ -36,7 +34,7 @@ function buildHTML(){
 function styles() {
     //Шаблон для поиска файлов CSS
     //Всей файлы по шаблону './src/css/**/*.css'
-    return gulp.src(cssFiles)
+    return gulp.src(styleDesktop, styleMobile)
 
         .pipe(sourcemaps.init())
         .pipe(stylus())
@@ -72,7 +70,8 @@ function watch() {
     //watch for PUG files
     gulp.watch('./pug/**/*.pug', buildHTML);
     //Следить за CSS файлами
-    gulp.watch('./stylus/*.styl', styles);
+    gulp.watch('./stylus/desktop/*.styl', styles);
+    gulp.watch('./stylus/mobile/*.styl', styles);
     //При изменении HTML запустить синхронизацию
     gulp.watch("./*.html").on('change', browserSync.reload);
 }
