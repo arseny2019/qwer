@@ -13,8 +13,7 @@ var pug = require('gulp-pug');
 
 
 //Порядок подключения css файлов
-const styleDesktop = './stylus/desktop/*.styl';
-const styleMobile = './stylus/mobile/*.styl';
+const styleDesktop = ['./stylus/desktop/*.styl','./stylus/mobile/**/*.styl'];
 const pugFiles = [
     './pug/index.pug'
 ];
@@ -34,8 +33,7 @@ function buildHTML(){
 function styles() {
     //Шаблон для поиска файлов CSS
     //Всей файлы по шаблону './src/css/**/*.css'
-    return gulp.src(styleDesktop, styleMobile)
-
+    return gulp.src(styleDesktop)
         .pipe(sourcemaps.init())
         .pipe(stylus())
         //Объединение файлов в один
@@ -71,7 +69,7 @@ function watch() {
     gulp.watch('./pug/**/*.pug', buildHTML);
     //Следить за CSS файлами
     gulp.watch('./stylus/desktop/*.styl', styles);
-    gulp.watch('./stylus/mobile/*.styl', styles);
+    gulp.watch('./stylus/mobile/**/*.styl', styles);
     //При изменении HTML запустить синхронизацию
     gulp.watch("./*.html").on('change', browserSync.reload);
 }
@@ -84,6 +82,6 @@ gulp.task('del', clean);
 //Таск для отслеживания изменений
 gulp.task('watch', watch);
 //Таск для удаления файлов в папке build и запуск styles и scripts
-gulp.task('build', gulp.series(clean, styles));
+gulp.task('build', styles);
 //Таск запускает таск build и watch последовательно
 gulp.task('dev', gulp.series('build','watch'));
